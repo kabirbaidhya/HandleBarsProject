@@ -1,0 +1,4 @@
+node_modules/
+public/bower-components
+public/build/
+npm-debug.log

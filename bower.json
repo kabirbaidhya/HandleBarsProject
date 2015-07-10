@@ -1,0 +1,19 @@
+{
+  "name": "hbstes",
+  "version": "0.0.0",
+  "authors": [
+    "Kabir <kabirbaidhya@lftechnology.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~3.0.3",
+    "jquery": "~2.1.4"
+  }
+}

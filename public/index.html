@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HBs Test </title>
+</head>
+<body>
+	<script type="text/javascript">
+		window.app = {};
+		app.getDate = function() {
+			return '2015'
+		};
+	</script>
+	<script type="text/javascript" src="/bower-components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/bower-components/handlebars/handlebars.runtime.min.js"></script>
+	<script type="text/javascript" src="/build/js/templates.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			var header = app.templates.header({
+				title: 'Hello World', 
+				tagLine: 'Just a test'
+			});
+
+			var body = app.templates.body({
+				content: 'This is Body text'
+			});
+
+			var footer = app.templates.footer({
+				date: app.getDate()
+			});
+
+			$('body').prepend(header + body + footer);
+		});
+	</script>
+</body>
+</html>
